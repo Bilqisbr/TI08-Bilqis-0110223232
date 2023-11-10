@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai</title>
+    <style>
+        .data{ 
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+        }
+        .data a{
+            text-decoration: none;
+            color: aliceblue;
+            
+        }
+        .isi{
+            text-align: center;
+            background-color: darkgrey;
+        }
+        .tombol input{
+            background-color: blue;
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="data">
+    <fieldset>
+        <h3>
+            <a href="#Data Karyawan"> Data Karyawan</a> 
+            <a href="#master data"> Master Data</a>
+            <a href="#tambah data "> Tambah Data</a>
+        </h3>
+    </fieldset>
+</div>
+<div class="isi">
+    <fieldset >
+        <h2 style="text-align: center;">FORM ENTRY DATA PEGAWAI</h2>
+        <br>
+        <label for="NIK">NIK :</label>
+        <input type="number" name="NIK" placeholder="NIK">
+        <br>
+        <br>
+        <label for="Nama">Nama :</label>
+        <input type="text" name="Nama" placeholder="Nama Pegawai">
+        <br>
+        <br>
+        <label for="Tempat Lahir">Tempat Lahir :</label>
+        <input type="text" name="tempat lahir" placeholder="Nama Kota">
+        <br>
+        <br>
+        <label for="Tanggal Lahir">Tanggal Lahir :</label>
+        <input type="date">
+        <br>
+        <br>
+        <label for="Alamat">Alamat :</label>
+        <textarea name="Alamat" id="Alamat" placeholder="Alamat Lengkap"></textarea>
+        <br>
+        <br>
+        <label for="No.Telepon">No.Telepon :</label>
+        <input type="number" name="Telephone Number" placeholder="Nomor Telepon">
+        <br>
+        <br>
+        <label for="Jabatan">Jabatan :</label>
+        <select name="Jabatan" id="Jabatan">
+            <option value="">Direksi</option>
+            <option value="">Direktur</option>
+            <option value="">Maneger</option>
+            <option value="">Staff</option>
+        </select>
+        <br>
+        <br>
+        <label for="Status">Status :</label>
+        <select name="Status" id="Status">
+            <option value="">Karyawan Tetap</option>
+            <option value="">Karyawan Kontrak</option>
+        </select>
+        <br>
+        <br>
+        <div class="tombol">
+            <input type="submit" value="Submit" name="tombol">
+            <input type="submit" value="Batal" name="tombol">
+        </div>
+    </fieldset>
+</div>
+</body>
+</html>
