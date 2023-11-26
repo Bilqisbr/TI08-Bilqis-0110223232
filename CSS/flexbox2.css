@@ -1,0 +1,34 @@
+.head{
+    width: auto;
+    height: 120px;
+    background-color: blanchedalmond;
+}
+
+.contrainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side{
+    background-color: aliceblue;
+    width: 800px;
+    height: 350px;
+}
+
+.nav{
+    background-color: darksalmon;
+    width: 300px;
+    height: 350px;
+}
+
+.content{
+    background-color: aqua;
+    width: 300px;
+    height: 350px;
+}
+
+.foot{
+    background-color: blanchedalmond;
+    width: auto;
+    height: 120px;
+}

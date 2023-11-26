@@ -1,0 +1,26 @@
+.contrainer{
+    width: 75%;
+    margin: 5rem auto;
+}
+
+.contrainer1{
+    display: flex;
+    gap: 2rem;
+}
+
+.contrainer2{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

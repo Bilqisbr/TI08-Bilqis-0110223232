@@ -1,0 +1,62 @@
+body{
+    background-color: palevioletred;
+}
+
+.head{
+    background-color: cornflowerblue;
+    width: auto;
+    height: 70px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.contrainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.side{
+    background-color: cadetblue;
+    width: 350px;
+    height: 400px;
+}
+
+.content{
+    background-color: salmon;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.img1{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-color: gray;
+}
+
+.img2{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-color: gray;
+}
+
+.img3{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-color: gray;
+}
+
+.foot{
+    background-color: cornflowerblue;
+    width: auto;
+    height: 70px;
+    margin: 15px;
+}

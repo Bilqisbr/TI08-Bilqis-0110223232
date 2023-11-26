@@ -1,0 +1,39 @@
+.contrainer{
+    display: flex;
+}
+
+.nav{
+    width: 400px;
+    height: 590px;
+    background-color: pink;
+}
+
+.contrainer1{
+    width: 75%;    
+}
+
+.contrainer2{
+    display: flex;
+    height: 300px;
+}
+
+.head{
+    height: 150px;
+    background-color: blanchedalmond;
+}
+
+.content{
+    width: 2000px;
+    background-color: white;
+}
+
+.side{
+    width: 500px;
+    background-color: aqua;
+}
+
+.foot{
+    width: 100%;
+    height: 140px;
+    background-color: blanchedalmond;
+}
