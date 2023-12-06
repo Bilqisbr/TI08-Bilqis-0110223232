@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="registrasi.html">Registrasi Seminar Workshop</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="admin.html">Creat New Seminar</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="kegiatan.html">Kegiatan</a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <p>Tanggal Daftar :</p>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text2" class="col-3 col-form-label">Form</label> 
+                            <div class="col-4">
+                              <input id="text2" name="text2" type="date" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="text3" class="col-3 col-form-label">To</label> 
+                            <div class="col-4">
+                              <input id="text3" name="text3" type="date" class="form-control">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-6"> 
+                          <p class="mt-2">Kategori Peserta</p> 
+                          <select id="select" name="select" class="custom-select"> 
+                            <option value="Mahasiswa">Mahasiswa</option> 
+                            <option value="Mahasiswa1">Mahasiswa1</option> 
+                            <option value="Mahasiswa3">Mahasiswa2</option> 
+                          </select> 
+                        </div> 
+                        <div class="col-md-6"> 
+                          <p class="mt-2">Status Peserta</p> 
+                          <select id="select" name="select" class="custom-select"> 
+                            <option value="Booking">Booking</option> 
+                            <option value="Booking1">Booking1</option> 
+                            <option value="Booking2">Booking2</option> 
+                            <option value="Booking3">Booking3</option> 
+                          </select> 
+                        </div> 
+                      </div>
+                    <div class="container-fluid"> 
+                        <div class="row"> 
+                            <div class="col-md-12 w-full d-flex p-3 mb-2 bg-dark text-white justify-content-between"> 
+                                <h5>Data Peserta Seminar</h5> 
+                                    <button type="button" class="btn btn-light"> 
+                                      Download 
+                                    </button>
+                            </div>
+                        </div> 
+                    </div> 
+                        <div class="row"> 
+                            <div class="col-md-12"> 
+                            <div class="form-group row"> 
+                                <label for="text" class="col-3 col-form-label">Search</label> 
+                            <div class="col-4"> 
+                                <input id="text" name="text" placeholder="Search here..." type="text" class="form-control"/> 
+                            </div> 
+                            </div> 
+                            </div> 
+                        </div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nomer</th>
+                            <th scope="col">Nama Lengkap</th>
+                            <th scope="col">Tempat Lahir</th>
+                            <th scope="col">Tanggal Lahir</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>5001</td>
+                            <td>Budi Anto</td>
+                            <td>Depok</td>
+                            <td>2000-10-1</td>
+                            <td>Laki-laki</td>
+                            <td>budianton@gmail.com</td>
+                            <td>Mahasiswa</td>
+                            <td>Booking</td>
+                            <td> 
+                                <i class="bi bi-eye-fill"></i> 
+                                <i class="bi bi-pencil-square"></i> 
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
