@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+    <h2>Kurs Rupiah</h2>
+<input type="number" name="money" id="money">
+<select name="kurs" id="kurs">
+    <option value="eur">EUR : Rp. 15000</option>
+    <option value="usd">USD : Rp. 16000</option>
+    <option value="sgd">SGD : Rp. 11600</option>
+    
+</select>
+
+<button id="hitung">Convert</button>
+<p id="result">Hasil :</p>
+
+<script>
+    //kurs rupiah
+    const money = document.querySelector('#money')
+    const kurs = document.querySelector('#kurs')
+    const result = document.querySelector('#result')
+    const btn = document.querySelector('#hitung')
+
+
+    btn.addEventListener("click", function() {
+        if (kurs.value == "usd") {
+            result.innerHTML = "Hasil: Rp." + money.value * 16000
+        }
+        else if (kurs.value == "eur") {
+            result.innerHTML = "Hasil: Rp." + money.value * 15000
+        }
+        else {
+            result.innerHTML = "Hasil: Rp." + money.value * 11600
+        }
+    })
+</script>
+
+<script>
+    //menghitung luas dan keliling lingkaran
+    const phi = 3.14
+    console.log("nilai PHI adalah" + phi)
+
+    let jari = 14
+    console.log('nilai jari jari adalah' + jari)
+
+    let luas = phi * (jari * jari)
+    console.log('nilai luas lingkaran adalah' + luas)
+
+    let kel = 2 * phi * jari
+    console.log('nilai keliling adalah' + kel)
+</script>
+
+<script>
+    //Biaya Parkir
+    function BiayaParkir(jamMasuk, jamKeluar) {
+   
+    if (jamMasuk >= jamKeluar) {
+        console.log(jamMasuk - jamKeluar)
+    }
+
+    let selisihJam = jamKeluar - jamMasuk;
+
+    let biayaParkir = 3000;
+
+    if (selisihJam > 2) {
+        biayaParkir += (selisihJam - 2) * 1000;
+    }
+
+    return `Biaya parkir untuk ${selisihJam} jam adalah: ${biayaParkir} rupiah`;
+}
+
+let jamMasuk = 7; 
+let jamKeluar = 11;
+
+console.log(BiayaParkir(jamMasuk, jamKeluar));
+</script>
+
+<!-- penjumlahan 2 bilangan -->
+<h2>Penjumlahan Dua Bilangan</h2>
+
+  <input type="number" id="bilangan1" onChange="hitungJumlah()">
+  <br>
+  <label for="bilangan2">+</label>
+  <br>
+  <input type="number" id="bilangan2" onChange="hitungJumlah()">
+  <br>
+  <label for="bilangan2">=</label>
+  <br>
+  <input type="number" id="hasil" readonly>
+
+  <script>
+     function hitungJumlah() {
+      let bilangan1 = document.getElementById('bilangan1').value;
+      let bilangan2 = document.getElementById('bilangan2').value;
+
+      let jumlah = Int(bilangan1) + Int(bilangan2);
+
+      document.getElementById('hasil').value = jumlah;
+    }
+  </script>
+</body>
+</html>
