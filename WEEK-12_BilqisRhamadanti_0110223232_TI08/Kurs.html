@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    fieldset{
+        width: 500px;
+        margin: auto;
+
+    }
+    th, td {
+      border: 1px solid #080505;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #bbc7fd;
+    }
+
+    td input {
+        width: 300px;
+    }
+    td select{
+        width: 300px;
+    }
+
+    button{
+        width: 100px;
+        height: 30px;
+        background-color: #bbc7fd;
+        margin-left: 90%;
+        border: 1px solid #080505;;  
+    }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>Kurs Rupiah - Mata Uang Asing</legend>
+<table>
+    <div class="container">
+       <div>
+        <tr>
+            <th>Masukan Nilai</th>
+            <th>
+                <label for="Currency">Mata Uang</label>
+            </th>
+            <th>Nilai Rupiah</th>
+        </tr>
+       </div>
+       <tr>
+           <td>
+            <input type="number" id="amount" placeholder="Masukkan nilai..." required>
+           </td>
+           <td>
+            <select id="Currency">
+                <option value="usd">Dollar US (USD)</option>
+                <option value="sgd">Dollar Singapore (SGD)</option>
+                <option value="myr">Ringgit Malaysia (MYR)</option>
+                <option value="jpy">Yen Jepang (JPY)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="sar">Riyal Arab Saudi (SAR)</option>
+            </select>
+           </td>
+           <td>
+            <input type="text" id="result" readonly>
+           </td>
+       </tr>
+</table>
+<br>
+    <button onclick="convertCurrency()"><b>Convert</b></button>
+</fieldset>
+<script>
+    function convertCurrency() {
+      var Currency = document.getElementById("Currency").value;
+      var amount = parseFloat(document.getElementById("amount").value);
+
+      var exchangeRate;
+
+      switch (Currency) {
+        case "usd":
+          kurs = 9915;
+          break;
+        case "sgd":
+          kurs = 13472;
+          break;
+        case "myr":
+          kurs = 874;
+          break;
+        case "jpy":
+          kurs = 120;
+          break;
+        case "eur":
+          kurs = 15888;
+          break;
+        case "sar":
+          kurs = 3592;
+          break;
+        default:
+          kurs = 1;
+      }
+
+      var result = amount * kurs;
+      document.getElementById("result").value = result.toLocaleString('en-US', { style: 'currency', currency: 'IDR' });
+     
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <body>
+        <select id="Photo" onchange="Changes_Photos()">
+          <option value="">Choose Animals</option>
+          <option value="./Image/anjing2.jpg">Dog</option>
+          <option value="./image/gajah.png">Elephant</option>
+          <option value="./image/hippo.jpg">Hippopotamus</option>
+          <option value="./image/owl.png">Owl</option>
+          <option value="./image/singa.jpg">Lion</option>
+          <option value="./image/snake.jpg">Snake</option>
+          <option value="./image/monyt.jpg">Monkey</option>
+          <option value="./image/jerapah.png">Giraffe</option>
+          <option value="./image/kelinci.jpg">Rabbit</option>
+          <option value="./image/koala.jpg">Koala</option>
+        </select>
+        <br />
+        <br />
+
+    <img id="box_photo" src="" alt="Choose " />
+
+<script>
+    function Changes_Photos() {
+    let ChoosePhoto = document.getElementById("Photo").value;     
+
+    document.getElementById("box_photo").src = ChoosePhoto;
+  }
+</script>
+</body>
+</html>

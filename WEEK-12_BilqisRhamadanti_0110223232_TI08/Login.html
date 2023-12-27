@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="otentikasi.js"></script>
+    <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      margin: 150px;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    fieldset{
+      border-radius: 5px;
+      
+    }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+
+<form id="loginForm">
+    <fieldset>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <button type="button" onclick="Login()">Login</button>
+    </fieldset>
+</form>
+</body>
+</html>
